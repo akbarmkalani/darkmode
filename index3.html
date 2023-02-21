@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/master/style3.css">
+</head>
+<body>
+    <main class="container-fluid  bg-dark" id="bg-dark">
+      
+         
+               
+                <nav class=" d-block d-md-flex  px-0 mx-0 col-12 align-items-center border-3 ">
+                    <div class=" col-sm-12 col-md-3 d-flex justify-content-end justify-content-md-start  align-items-center py-4  py-md-0" >
+                        <section class="dark-mode d-flex " onclick="$toggel()"><span></span></section>
+                    </div>
+                    <div class="homburger-menu  col-3 d-md-none" onclick="dropMneu(this)">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class=" d-none  d-md-flex h-100 ">
+                      
+                        <li class=" h-100 mx-3">
+                            <a class="d-flex align-items-center h-100 txt" href="#">home</a>
+                        </li>
+                        <li class=" h-100 mx-3">
+                            <a class="d-flex align-items-center h-100 txt" href="#">Severise</a>
+                        </li>
+                        <li class=" h-100 mx-3">
+                            <a class="d-flex align-items-center h-100 txt" href="#">About</a>
+                        </li>
+                        <li class=" h-100 mx-3">
+                           <a class="d-flex align-items-center h-100  txt"href="#"> conatct</a> 
+                        </li>
+                        <li class=" h-100 mx-3">
+                            <a class="d-flex align-items-center h-100 txt" href="#">Sig In</a>
+                        </li> 
+                     
+                    </ul>
+                    <!-- MObile -->
+                      <ul class=" d-md-none col-12 " id="mobile">
+
+                        <li class="col-12 h-100 mx-3">
+                            <a class="d-flex align-items-center h-100 txt" href="#">home</a>
+                        </li>
+                        <li class="col-12 h-100 mx-3">
+                            <a class="d-flex align-items-center h-100 txt" href="#">Severise</a>
+                        </li>
+                        <li class="col-12 h-100 mx-3">
+                            <a class="d-flex align-items-center h-100 txt" href="#">About</a>
+                        </li>
+                        <li class="col-12 h-100 mx-3">
+                           <a class="d-flex align-items-center h-100  txt"href="#"> conatct</a> 
+                        </li>
+                        <li class="col-12 h-100 mx-3">
+                            <a class="d-flex align-items-center h-100 txt" href="#">Sig In</a>
+                        </li> 
+                      </ul>
+                </nav>
+           
+
+            <section class="col-12  py-5">
+                  <div class="row justify-content-center  px-5">
+                    <section class="col-md-6 d-flex justify-content-center ">
+                        <figure class="efter col-9   d-flex justify-content-center">
+                            <img src="assets/img/slid09.jpg" alt="" class="w-100">
+                        </figure>
+    
+                    </section>
+                    
+                     <section class=" banner col-md-6 p-5" >
+                        <h1 class="bold">
+                            Lorem ipsum dolor, sit amet consectetur 
+                        </h1>
+                        <p class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ratione vitae debitis possimus quod unde nihil beatae in, officiis cum sint vero sed, corporis dolores magni, odit nisi alias facilisquod unde nihil beatae in, officiis cum sint vero sed, corporis dolores magni, odit nisi alias facilis</p>
+                        <a href="" class="btn   d-flex justify-content-center align-items-center mx-auto">More</a>
+                     </section>
+                  </div>
+            </section>
+            <!-- ******** -->
+            <section class="  col-12 ">
+                <div class="box row justify-content-center px-5 align-items-center">
+                    <section class=" m-3 col-md-6 col-lg-3 border p-3 mx-auto"> 
+                        <h2 class="bold">Lorem ipsum  consectetur.</h2>
+                        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsum illo molestias quas necessitatibus a, incidunt eligendi optio dolor eos aspernatur maiores reiciendis fugiat delectus sint fuga quidem voluptate non?</p>
+                        <a href="" class="btn   d-flex justify-content-center align-items-center mx-auto">More</a>
+
+                    </section>
+                    <section class="col-md-6 m-3 col-lg-3 border p-3 mx-auto"> 
+                        <h2 class="bold">Lorem ipsum  consectetur.</h2>
+                        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsum illo molestias quas necessitatibus a, incidunt eligendi optio dolor eos aspernatur maiores reiciendis fugiat delectus sint fuga quidem voluptate non?</p>
+                        <a href="" class="btn  d-flex justify-content-center align-items-center mx-auto">More</a>
+
+                    </section>
+                    <section class="col-md-6 m-3 col-lg-3 border p-3 mx-auto"> 
+                        <h2 class="bold">Lorem ipsum  consectetur.</h2>
+                        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsum illo molestias quas necessitatibus a, incidunt eligendi optio dolor eos aspernatur maiores reiciendis fugiat delectus sint fuga quidem voluptate non?</p>
+                        <a href="" class="btn  d-flex justify-content-center align-items-center mx-auto">More</a>
+
+                    </section>
+                  
+                </div>
+
+            </section>
+
+            <footer class="col-12 border">
+                  <div class="row">
+                    <section class="col-3 border "></section>
+                  </div>
+            </footer>
+
+
+        
+    </main>
+
+    <script>
+        let menu = 1
+        let _li = document.getElementById('mobile')
+        
+        function dropMneu(_span){
+            x = _span.children
+
+            /* ** */
+            if(menu % 2){
+               _li.style.transform='translate(0)'
+            x[1].style.opacity='0'
+            x[0].style.transform='rotate(39deg)'
+            x[2].style.transform='rotate(-39deg)'
+
+
+            }else{
+                _li.style.transform='translate(-130%)'
+                x[1].style.opacity='1'
+                x[0].style.transform='rotate(0)'
+                x[2].style.transform='rotate(0)' 
+            }
+            menu++
+        }
+
+         
+
+        function $toggel(){
+        document.querySelector(".dark-mode>span").classList.toggle('dark')
+        document.querySelector('main').classList.toggle('bg')
+        document.querySelector('main>nav').classList.toggle('text')
+        document.querySelector('.banner').classList.toggle('text')
+        document.querySelector('.box').classList.toggle('text')
+        document.querySelector('.box').classList.toggle('font')
+        }
+    </script>
+</body>
+</html>
+

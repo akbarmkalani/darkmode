@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Mynerve&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Gloock&family=Mynerve&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Courgette", cursive;
+}
+
+h1, h2 {
+  /*   font-family: 'Mynerve', cursive; */
+  font-family: "Gloock", serif !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #8a0f24;
+}
+
+p {
+  font-weight: 800;
+  line-height: 29px;
+}
+
+main {
+  transition: 0.4s;
+}
+main > nav {
+  position: relative;
+  color: #e3e3e3;
+  height: 90px;
+  border-bottom: 1px solid gray;
+}
+main > nav > div > .dark-mode {
+  width: 60px;
+  height: 30px;
+  background-color: #0f4747;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+}
+main > nav > div > .dark-mode > span {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px #e3e3e3;
+  transition: 0.4s;
+}
+main > nav ul > li > a {
+  color: inherit;
+  font-size: 22px;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+main > nav ul:nth-of-type(2) {
+  position: absolute;
+  top: 85px;
+}
+
+/* homburger-menu */
+.homburger-menu {
+  position: relative;
+  top: -60px;
+  width: 100px;
+  height: 60px;
+}
+.homburger-menu > span {
+  display: flex;
+  background-color: #b43807;
+  height: 4px;
+  width: 60%;
+  margin: 15px;
+  transition: 0.4s;
+}
+.homburger-menu > span:nth-of-type(1) {
+  transform-origin: top left;
+}
+.homburger-menu > span:nth-of-type(3) {
+  transform-origin: bottom left;
+}
+
+#mobile {
+  transform: translateX(-130%);
+  transition: 0.4s;
+  z-index: 1;
+  background-color: initial;
+}
+
+.dark {
+  transform: translateX(35px);
+  background-color: #e1a707 !important;
+}
+
+.bg {
+  background-color: #939a96 !important;
+}
+
+.text {
+  color: #313131 !important;
+}
+
+.banner {
+  color: #c1dfce;
+  transition: 0.4s;
+}
+
+.efter {
+  border-radius: 12px;
+  position: relative;
+}
+.efter > img {
+  border-radius: 12px;
+}
+.efter::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 12, 49, 0.7647058824);
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  border-radius: 12px;
+}
+.efter:hover::after {
+  width: 0;
+}
+
+.box {
+  color: #e3e3e3;
+  transition: 0.4s;
+}
+.box > section {
+  border-radius: 20px;
+  box-shadow: 0 0 2px 2px #ffffff;
+}
+
+.btn {
+  background-color: inherit;
+  width: 200px;
+  border: 2px solid #c1dfce;
+  height: 50px;
+  transition: 0.4s;
+  color: inherit;
+}
+.btn:hover {
+  background-color: aqua;
+}
+
+.font {
+  /* font-family: 'Gloock', serif !important; */
+  /* font-family: 'Courgette', cursive !important; */
+  font-family: "Mynerve", cursive;
+}
+
+@keyframes anime {}/*# sourceMappingURL=style3.css.map */
